@@ -9,8 +9,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-#要改写成类
-#还要再写一个判断数据库中是否已存在这条数据的语句
+#删掉了数据库连接的信息
 class news_scrapy(object):
     def __init__(self):
         # 这里是真的懒得想英文.....而且一共没有几个栏目，不需要写爬虫
