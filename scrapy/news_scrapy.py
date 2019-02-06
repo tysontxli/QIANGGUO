@@ -9,8 +9,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-#要改写成类
-#还要再写一个判断数据库中是否已存在这条数据的语句
+#删掉了数据库连接的信息
 class news_scrapy(object):
     def __init__(self):
         # 这里是真的懒得想英文.....而且一共没有几个栏目，不需要写爬虫
@@ -70,7 +69,7 @@ class news_scrapy(object):
 
     def __firstTime__(self):
         # newstotal = []
-        db = MySQLdb.connect("111.230.140.27","tyson","123456","QIANGGUO",charset='utf8')
+        db = MySQLdb.connect("ip", "username", "password", "QIANGGUO", charset='utf8')
         cursor = db.cursor()
         for columnUrl in self.__columnUrlDict.values():
             for url in self.__getPercolumn_allUrl__(columnUrl):
@@ -92,7 +91,7 @@ class news_scrapy(object):
 
     def __Maintain__(self):
         # newstotal = []
-        db = MySQLdb.connect("111.230.140.27", "tyson", "123456", "QIANGGUO", charset='utf8')
+        db = MySQLdb.connect("ip", "username", "password", "QIANGGUO", charset='utf8')
         cursor = db.cursor()
         columnNum = 1
         for columnUrl in self.__columnUrlDict.values():
