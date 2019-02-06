@@ -112,7 +112,17 @@ class news_scrapy(object):
                         columnNum = columnNum+1
                         break
                 else:
-                    print "这是一则新的文章，id为%s，已为您更新到数据库"%(newsItemdict['page_id'])
+                    insertsql = "INSERT INTO QGNews(article_id,article_title,article_url,article_date,article_editor,article_source,column_id) VALUES('%s','%s','%s','%s','%s','%s','%s')" % (
+                    newsItemdict['page_id'], newsItemdict['frst_name'], newsItemdict['article_url'],
+                    newsItemdict['original_time'], newsItemdict['editor'], newsItemdict['source'],
+                    newsItemdict['cate_id'])
+                    try:
+                        cursor.execute(insertsql)
+                        db.commit()
+                        print "这是一则新的文章，id为%s，已为您更新到数据库" % (newsItemdict['page_id'])
+                    except:
+                        print "这一次插入数据错误"
+
         else:
             print "本日的更新已完成"
 
