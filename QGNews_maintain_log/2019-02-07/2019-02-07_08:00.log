@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 133, in <module>
+    scrapy.__Maintain__()
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 94, in __Maintain__
+    db = MySQLdb.connect("ip", "username", "password", "QIANGGUO", charset='utf8')
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2005, "Unknown MySQL server host 'ip' (2)")
