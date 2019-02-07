@@ -104,7 +104,7 @@ class news_scrapy(object):
                 if cursor.rowcount != 0:
                     if count < 5:
                         selectResult = cursor.fetchone()
-                        print "id为%s的文章已存在，不需要更新" % (selectResult[1])
+                        print "名称为《%s》的文章已存在，不需要更新" % (selectResult[2])
                         count +=1
                     else:
                         print "第%s个栏目的文章已经不需要更新了"%(columnNum)
@@ -118,7 +118,7 @@ class news_scrapy(object):
                     try:
                         cursor.execute(insertsql)
                         db.commit()
-                        print "这是一则新的文章，id为%s，已为您更新到数据库" % (newsItemdict['page_id'])
+                        print "【新文章提醒】这是一则新的文章，名称为%s，已为您更新到数据库" % (newsItemdict['frst_name'])
                     except:
                         print "这一次插入数据错误"
 
