@@ -69,7 +69,7 @@ class news_scrapy(object):
 
     def __firstTime__(self):
         # newstotal = []
-        db = MySQLdb.connect("111.230.140.27", "tyson", "123456", "QIANGGUO", charset='utf8')
+        db = MySQLdb.connect("localhost", "tyson", "123456", "QIANGGUO", charset='utf8')
         cursor = db.cursor()
         for columnUrl in self.__columnUrlDict.values():
             for url in self.__getPercolumn_allUrl__(columnUrl):
@@ -91,7 +91,7 @@ class news_scrapy(object):
 
     def __Maintain__(self):
         # newstotal = []
-        db = MySQLdb.connect("111.230.140.27", "tyson", "123456", "QIANGGUO", charset='utf8')
+        db = MySQLdb.connect("localhost", "tyson", "123456", "QIANGGUO", charset='utf8')
         cursor = db.cursor()
         columnNum = 1
         for columnUrl in self.__columnUrlDict.values():
