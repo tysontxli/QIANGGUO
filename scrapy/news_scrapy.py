@@ -27,6 +27,38 @@ class news_scrapy(object):
             "zonghexinwen": "https://www.xuexi.cn/7097477a9643eacffe4cc101e4906fdb/9a3668c13f6e303932b5e0e100fc248b.html",
 	    "toutiaoxinwei":"https://www.xuexi.cn/72ac54163d26d6677a80b8e21a776cfa/9a3668c13f6e303932b5e0e100fc248b.html"		            }
 
+    def __decorateArticleUrlDict__(self):
+        from aboutCategory.get_category_url import get_category_url
+        scrapy = get_category_url()
+        #从其他脚本拿到所有可用的栏目url
+        validUrlList = scrapy.getValidurlList()
+
+        #将原来的栏目url字典变成列表
+        completedArticleColumnUrl = []
+        for value in self.__columnUrlDict.values():
+            completedArticleColumnUrl.append(value)
+
+        #将所有新拿到的且内容文章的栏目url，加入到completedArticleColumnUrl这个列表中
+        for columnUrl in validUrlList:
+            try:
+                temp = self.__getPercolumn_allUrl__(columnUrl)
+                articleColumnUrl = columnUrl
+
+                #判断本次的栏目url是否已经存在于列表中
+                flag = True
+                for url in completedArticleColumnUrl:
+                    if url == articleColumnUrl:
+                        flag = False
+
+                #本次栏目不存在于列表时才插入
+                if flag == True:
+                    completedArticleColumnUrl.append(articleColumnUrl)
+            except:
+                pass
+                # print "这是一个无法获取文章的栏目，应该是视频"
+        print "文章栏目更新完毕，下面开始更新文章"
+        return completedArticleColumnUrl
+
     def __getArticleDetail__(self,newsUrl):
         """
         :param newsUrl:新闻页面的html地址，而不是js格式的请求地址
@@ -94,7 +126,7 @@ class news_scrapy(object):
         db = MySQLdb.connect("localhost", "tyson", "123456", "QIANGGUO", charset='utf8')
         cursor = db.cursor()
         columnNum = 1
-        for columnUrl in self.__columnUrlDict.values():
+        for columnUrl in self.__decorateArticleUrlDict__():
             count = 0
             print "现在对第%s个栏目进行检测" % (columnNum)
             for url in self.__getPercolumn_allUrl__(columnUrl):
@@ -102,7 +134,7 @@ class news_scrapy(object):
                 selectsql = "select * from QGNews where article_id = '%s'"%(newsItemdict['page_id'])
                 cursor.execute(selectsql)
                 if cursor.rowcount != 0:
-                    if count < 5:
+                    if count < 10:
                         selectResult = cursor.fetchone()
                         print "名称为《%s》的文章已存在，不需要更新" % (selectResult[2])
                         count +=1
@@ -118,7 +150,7 @@ class news_scrapy(object):
                     try:
                         cursor.execute(insertsql)
                         db.commit()
-                        print "【新文章提醒】这是一则新的文章，名称为%s，已为您更新到数据库" % (newsItemdict['frst_name'])
+                        print "【新文章提醒】这是一则新的文章，名称为《%s》，已为您更新到数据库" % (newsItemdict['frst_name'])
                     except:
                         print "这一次插入数据错误"
 
@@ -131,3 +163,4 @@ if __name__ == '__main__':
     scrapy = news_scrapy()
     # scrapy.__firstTime__()
     scrapy.__Maintain__()
+    # scrapy.decorateUrlDict()
