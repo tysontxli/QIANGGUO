@@ -2,725 +2,720 @@
           pageId: '71eb7214c6c0c1f5e6ec6e29564decb4',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '红色中国',
 cate_id: '党史人物',
 title: '党史人物'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '红色中国',
 cate_id: '永远的丰碑',
 type: '永远的丰碑（文字）',
 title: '永远的丰碑'
---
+
         var param = {
           pageId: '8c5129d583985f2380c340b69c8f4734',
             
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '红色中国',
 cate_id: '学习党史',
 type: '党史研究'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '红色中国',
 cate_id: '学习党史',
 type: '党史研究'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '红色中国',
 cate_id: '学习党史',
 type: '党史故事'
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '红色中国',
 cate_id: '永远的丰碑',
 title: '永远的丰碑'
         }
---
+
         var param = {
           pageId: '3327325a8f7d6515f14167937138defa',
             
         }
---
+
         var param = {
           pageId: '4362e5694588eb0c772d7293ba579ac0',
             
         }
---
+
         var param = {
           pageId: '99115d0e9a0ed7b850871a8c6b3ea132',
             
         }
---
+
         var param = {
           pageId: 'e15740a2c58b549c28adaabd21aa90fa',
             p1: '毛泽东选集'
         }
---
+
         var param = {
           pageId: 'e15740a2c58b549c28adaabd21aa90fa',
             p1: '邓小平文选'
         }
---
+
         var param = {
           pageId: 'e15740a2c58b549c28adaabd21aa90fa',
             p1: '江泽民文选'
         }
---
+
         var param = {
           pageId: 'e15740a2c58b549c28adaabd21aa90fa',
             p1: '胡锦涛文选'
         }
---
+
         var param = {
           pageId: 'e15740a2c58b549c28adaabd21aa90fa',
             p1: '习近平著作'
         }
---
+
         var param = {
           pageId: '632637934f4fde6f0cefbf743596aee5',
             
         }
---
+
         var param = {
           pageId: '2c4b5bffe40a6b77f03bf5adcd088e38',
             
         }
---
+
         var param = {
           pageId: 'affa4431f7b13a6f20a2228244131091',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '读书评报',
 title: '读书评报'
         }
---
+
         var param = {
           pageId: 'f0a97a1b147ce11de110811b81a299fd',
             
         }
---
+
         var param = {
           pageId: 'dc4b5559df6369d10e381ae95f8e9f34',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             cate_id: '学习知识',
 type: '航空航天',
 title: '知识问答'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习科学',
 cate_id: '科普热点'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习科学',
 cate_id: '辟谣平台'
         }
---
+
         var param = {
           pageId: 'a86870b30c3994f155fb3c2aa2838fb9',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习园地',
 title: '文化广场'
         }
---
+
         var param = {
           pageId: 'undefined',
             type: '习近平论“一带一路”',
 post_id: '5a5351f7553a3302ceb8eed1'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习调研',
 cate_id: '调研成果',
 title: '调研成果选'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习调研',
 cate_id: '调研与实践',
 title: '调研与写作方法谈'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '全国重大典型'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '“双百”人物'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '时代楷模'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '全国道德模范'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '中国好人'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '军队先进典型'
         }
---
+
         var param = {
           pageId: '5afa2289c8a14feb189920231dadc643',
             params_id: '省区市先进典型'
         }
---
+
         var param = {
           pageId: '7f9f27c65e84e71e1b7189b7132b4710',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习书单'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             program_id: '头条专区',
 cate_id: '世界眼中的习近平'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '重要新闻',
 cate_id: '重要新闻'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '习近平日志',
 cate_id: '重要学习',
 title: '中央政治局集体学习'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习时评'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '中宣部发布'
         }
---
+
         var param = {
           pageId: 'b3f00409333ba34e80aac0932b590853',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习金句'
         }
---
+
         var param = {
           pageId: 'ba635b20ba5f94e503123161c188170c',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习岁月'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '原创首发'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习研究'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习实践'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '头条专区',
 cate_id: '头条新闻'
         }
---
+
         var param = {
           pageId: 'ab3d8a4cbc5cc6457a74c4b743f8c8a5',
             
         }
---
+
         var param = {
           pageId: 'b026785c5043851a5dfc0ae65a4749c5',
             p1: '055习近平论学习'
         }
---
+
         var param = {
           pageId: 'affa4431f7b13a6f20a2228244131091',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习研究',
 cate_id: '学习研究'
         }
---
+
         var param = {
           pageId: 'undefined',
             type: '习近平论红色文化',
 post_id: '5aba53e9b70b3937176e4d7f'
         }
---
+
         var param = {
           pageId: 'undefined',
             type: '习近平论“一带一路”',
 post_id: '5ab9a4e9b70b3937176e48b4'
         }
---
+
         var param = {
           pageId: 'undefined',
             type: '习近平论调查研究',
 post_id: '5aba1ba9b70b3937176e4b41'
         }
---
+
         var param = {
           pageId: 'affa4431f7b13a6f20a2228244131091',
             
         }
---
+
         var param = {
           pageId: 'e43e220633a65f9b6d8b53712cba9caa',
             post_id: '5ab34e20d8d52955ecffad58'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习研究',
 cate_id: '学习心得',
 title: '学习园地'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '十九大时间',
 cate_id: '学习问答',
 title: '你问我答'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '综合信息',
 title: '综合新闻'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '新闻发布厅'
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: '896523ec07da3522576b3b1395783eb9',
             
         }
---
+
         var param = {
           pageId: '9a75e290b9cf8cb8fb529a6e503db78d',
             
         }
---
+
         var param = {
           pageId: '71eb7214c6c0c1f5e6ec6e29564decb4',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '环球视野',
 cate_id: '文明交流互鉴',
 title: '世界文明研究'
         }
---
+
         var param = {
           pageId: 'b194a03c70fcc97418903b44a742683e',
             programa_id: '美丽中国',
 cate_id: '走遍中国景区',
 title: '景区欣赏'
         }
---
+
         var param = {
           pageId: '1a896e4046612625219fecf149d41b0c',
             programa_id: '美丽中国',
 cate_id: '历史文化名城',
 title: '国家历史文化名城'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '美丽中国',
 cate_id: '历史文化名镇（村）',
 title: '中国历史名镇名村'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '美丽中国',
 cate_id: '历史文化街区',
 title: '中国历史文化街区'
         }
---
+
         var param = {
           pageId: '30f9bd4270dcfcec41b1a26d8245fde0',
             programa_id: '学习科学',
 cate_id: '科学著作',
 title: '科学著作'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习科学',
 cate_id: '世界科技博览',
 type: '世界科技史',
 title: '世界科技史'
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习科学',
 cate_id: '中国科技史',
 type: '中国科技史',
 title: '中国科技史'
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习科学',
 cate_id: '一线风采',
 type: '图文',
 title: '一线风采'
---
+
         var param = {
           pageId: 'b026785c5043851a5dfc0ae65a4749c5',
             p1: '047习近平论强军兴军'
         }
---
+
         var param = {
           pageId: 'b87d700beee2c44826a9202c75d18c85',
             programa_id: '学习电视台',
 cate_id: '第一频道',
 type: '习近平活动视频集',
 title: '重要活动视频专辑'
---
+
         var param = {
           pageId: 'b87d700beee2c44826a9202c75d18c85',
             programa_id: '学习电视台',
 cate_id: '第一频道',
 type: '学习新视界',
 title: '学习新视界'
---
+
         var param = {
           pageId: 'b87d700beee2c44826a9202c75d18c85',
             programa_id: '学习电视台',
 cate_id: '人物频道',
 type: '身边的感动',
 title: '身边的感动'
---
+
         var param = {
           pageId: '358a7137273fdd6cdbcae8c5567a4b57',
             
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '学习实践'
         }
---
+
         var param = {
           pageId: '1a896e4046612625219fecf149d41b0c',
             programa_id: '强军兴军',
 cate_id: '统帅与官兵',
 title: '统帅与官兵'
         }
---
+
         var param = {
           pageId: '1a896e4046612625219fecf149d41b0c',
             programa_id: '强军兴军',
 cate_id: '三军风采',
 title: '三军风采'
         }
---
+
         var param = {
           pageId: 'fedf209cb84576b11329098c0846312e',
             programa_id: '强军兴军',
 cate_id: '军中英模',
 title: '军中英模'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '强军兴军',
 cate_id: '古代军史知识',
 title: '古代军史知识'
         }
---
+
         var param = {
           pageId: '7222ae6b74ef2dac15935478ba6efe8d',
             programa_id: '强军兴军',
 cate_id: '军事著作',
 title: '军事著作'
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: 'fedf209cb84576b11329098c0846312e',
             programa_id: '强军兴军',
 cate_id: '军中英模',
 title: '军中英模'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '强军兴军',
 cate_id: '强军时评',
 title: '强军时评'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '强军兴军',
 cate_id: '习近平强军思想研究',
 title: '习近平强军思想研究'
         }
---
+
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '强军兴军',
 cate_id: '兵器大观',
 title: '兵器大观'
         }
---
+
         var param = {
           pageId: 'd5f10ca7a896db35d9cd3b63e2f406f6',
             
         }
---
+
         var param = {
           pageId: 'a63e2e2b368b4fe914ca2d37f36544df',
             
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习与培训',
 cate_id: '培训案例',
 title: '培训案例'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习与培训',
 cate_id: '培训教材',
 title: '培训教材'
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习与培训',
 cate_id: '培训专题',
 title: '培训专题'
         }
---
+
         var param = {
           pageId: 'b87d700beee2c44826a9202c75d18c85',
             programa_id: '实播平台',
 title: '实播平台'
         }
---
+
         var param = {
           pageId: 'df59e7a5427508e62df34eb36f5c0223',
             
         }
---
+
         var param = {
           pageId: '750d686d0daa35560dedf6549ce75246',
             
         }
---
+
         var param = {
           pageId: '750d686d0daa35560dedf6549ce75246',
             
         }
---
+
         var param = {
           pageId: '750d686d0daa35560dedf6549ce75246',
             
         }
---
+
         var param = {
           pageId: '750d686d0daa35560dedf6549ce75246',
             
         }
---
+
         var param = {
           pageId: 'b026785c5043851a5dfc0ae65a4749c5',
             p1: '056习近平论调查研究'
         }
---
+
         var param = {
           pageId: '272ce4ac6a7a6e8922c38f03afb28dd5',
             
         }
---
+
         var param = {
           pageId: '29f26f722b3749f799692dcb4c3bc73c',
             
         }
---
+
         var param = {
           pageId: '1a1c60c4880b806aee52fc908d48cf4f',
             
         }
---
+
         var param = {
           pageId: '3130ba968c09230dc802101c66761e93',
             
         }
---
+
         var param = {
           pageId: '867ef8949a23097bcde57732799cb4b6',
             
         }
---
+
         var param = {
           pageId: 'c0eb4dc2e24cdc279844a05fedccae2e',
             
         }
---
+
         var param = {
           pageId: '418f3a4653b835af1b705e20ac8b4621',
             
         }
---
+
         var param = {
           pageId: 'f2d8ff735982530b7a8c9bb90fa99f68',
             
         }
---
+
         var param = {
           pageId: '8b9665fcc002ae6415b6feb3fa7b04e4',
             
         }
---
+
         var param = {
           pageId: 'db086044562a57b441c24f2af1c8e101',
             
         }
---
+
         var param = {
           pageId: 'affa4431f7b13a6f20a2228244131091',
             
         }
---
+
         var param = {
           pageId: '393405012b41a41ff5162ae36d8f0133',
             
         }
---
+
         var param = {
           pageId: '5957f69bffab66811b99940516ec8784',
             programa_id: '学习科学',
 cate_id: '国家工程',
 title: '国家工程'
         }
---
+
         var param = {
           pageId: '468223f4d6bc2ddce2e2e280a69f422b',
             programa_id: '学习科学',
 cate_id: '大国工匠',
 title: '大国工匠'
         }
---
+
         var param = {
           pageId: 'b87d700beee2c44826a9202c75d18c85',
             programa_id: '实播平台',
 title: '实播平台'
         }
---
+
         var param = {
           pageId: '91b2545db4228cb3b1c2c8751902b55f',
             
-        }
---
-        var param = {
-          pageId: '750d686d0daa35560dedf6549ce75246',
-            p1: item.province
         }
