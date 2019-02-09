@@ -130,30 +130,32 @@ class news_scrapy(object):
             count = 0
             print "现在对第%s个栏目进行检测" % (columnNum)
             for url in self.__getPercolumn_allUrl__(columnUrl):
-                newsItemdict = self.__getArticleDetail__(url)
-                selectsql = "select * from QGNews where article_id = '%s'"%(newsItemdict['page_id'])
-                cursor.execute(selectsql)
-                if cursor.rowcount != 0:
-                    if count < 10:
-                        selectResult = cursor.fetchone()
-                        print "名称为《%s》的文章已存在，不需要更新" % (selectResult[2])
-                        count +=1
+                try:
+                    newsItemdict = self.__getArticleDetail__(url)
+                    selectsql = "select * from QGNews where article_id = '%s'"%(newsItemdict['page_id'])
+                    cursor.execute(selectsql)
+                    if cursor.rowcount != 0:
+                        if count < 20:
+                            selectResult = cursor.fetchone()
+                            print "名称为《%s》的文章已存在，不需要更新" % (selectResult[2])
+                            count +=1
+                        else:
+                            print "第%s个栏目的文章已经不需要更新了"%(columnNum)
+                            columnNum = columnNum+1
+                            break
                     else:
-                        print "第%s个栏目的文章已经不需要更新了"%(columnNum)
-                        columnNum = columnNum+1
-                        break
-                else:
-                    insertsql = "INSERT INTO QGNews(article_id,article_title,article_url,article_date,article_editor,article_source,column_id) VALUES('%s','%s','%s','%s','%s','%s','%s')" % (
-                    newsItemdict['page_id'], newsItemdict['frst_name'], newsItemdict['article_url'],
-                    newsItemdict['original_time'], newsItemdict['editor'], newsItemdict['source'],
-                    newsItemdict['cate_id'])
-                    try:
-                        cursor.execute(insertsql)
-                        db.commit()
-                        print "【新文章提醒】这是一则新的文章，名称为《%s》，已为您更新到数据库" % (newsItemdict['frst_name'])
-                    except:
-                        print "这一次插入数据错误"
-
+                        insertsql = "INSERT INTO QGNews(article_id,article_title,article_url,article_date,article_editor,article_source,column_id) VALUES('%s','%s','%s','%s','%s','%s','%s')" % (
+                        newsItemdict['page_id'], newsItemdict['frst_name'], newsItemdict['article_url'],
+                        newsItemdict['original_time'], newsItemdict['editor'], newsItemdict['source'],
+                        newsItemdict['cate_id'])
+                        try:
+                            cursor.execute(insertsql)
+                            db.commit()
+                            print "【新文章提醒】这是一则新的文章，名称为《%s》，已为您更新到数据库" % (newsItemdict['frst_name'])
+                        except:
+                            print "这一次插入数据错误"
+                except:
+                    count += 1
         else:
             print "本日的更新已完成"
 
