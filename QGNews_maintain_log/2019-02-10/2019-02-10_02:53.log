@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 170, in <module>
+    scrapy.__Maintain__()
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 132, in __Maintain__
+    for columnUrl in self.__decorateArticleUrlDict__():
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 31, in __decorateArticleUrlDict__
+    from aboutCategory.get_category_url import get_category_url
+  File "/root/QIANGGUO/QIANGGUO/scrapy/aboutCategory/get_category_url.py", line 18
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
