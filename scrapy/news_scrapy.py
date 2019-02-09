@@ -28,6 +28,10 @@ class news_scrapy(object):
 	    "toutiaoxinwei":"https://www.xuexi.cn/72ac54163d26d6677a80b8e21a776cfa/9a3668c13f6e303932b5e0e100fc248b.html"		            }
 
     def __decorateArticleUrlDict__(self):
+        """
+        用于对文章栏目url进行补充，以达到爬取网站所有文章的目的
+        :return:
+        """
         from aboutCategory.get_category_url import get_category_url
         scrapy = get_category_url()
         #从其他脚本拿到所有可用的栏目url

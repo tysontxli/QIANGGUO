@@ -4,6 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 
 class get_category_url():
+    """
+    用来获取所有有效的栏目url，因为很多是空的
+    """
     def __init__(self):
         pass
 
