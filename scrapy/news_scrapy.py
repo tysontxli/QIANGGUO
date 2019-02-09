@@ -73,15 +73,18 @@ class news_scrapy(object):
             if key == 'sysQuery':
                 pass
             elif key!= 'sysQuery':
-                articleDict['frst_name'] =value['detail']['frst_name']
-                articleDict['source']=value['detail']['source']
-                articleDict['editor']=value['detail']['editor']
-                articleDict['original_time']=value['detail']['original_time']
-                articleDict['cate_id']=value['detail']['cate_id']
-                articleDict['article_url']=newsUrl
-                articleDict['page_id']=value['detail']['_id']
-                return articleDict
-                # return json.dumps(result, encoding="UTF-8", ensure_ascii=False)
+		try:
+                	articleDict['frst_name'] =value['detail']['frst_name']
+                	articleDict['source']=value['detail']['source']
+                	articleDict['editor']=value['detail']['editor']
+                	articleDict['original_time']=value['detail']['original_time']
+                	articleDict['cate_id']=value['detail']['cate_id']
+                	articleDict['article_url']=newsUrl
+                	articleDict['page_id']=value['detail']['_id']
+                	return articleDict
+                	# return json.dumps(result, encoding="UTF-8", ensure_ascii=False)
+		except:
+			pass
 
     def __getPercolumn_allUrl__(self,columnUrl):
         """
