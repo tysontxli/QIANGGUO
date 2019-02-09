@@ -4,11 +4,6 @@
         }
 --
         var param = {
-          pageId: 'b026785c5043851a5dfc0ae65a4749c5',
-            p1: item.replace_name
-        }
---
-        var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '红色中国',
 cate_id: '党史人物',
@@ -114,13 +109,6 @@ title: '永远的丰碑'
           pageId: 'affa4431f7b13a6f20a2228244131091',
             
         }
---
-            var param = {
-              
-            }
-            return parent.window.location.href
-          }()
-        
 --
         var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
@@ -379,26 +367,6 @@ title: '综合新闻'
         }
 --
         var param = {
-          pageId: '7f9f27c65e84e71e1b7189b7132b4710',
-            p1: self.set_value_l11sub1mhq800
-        }
---
-        var param = {
-          pageId: '7f9f27c65e84e71e1b7189b7132b4710',
-            p1: self.set_value_2ikj36qcv3s00
-        }
---
-        var param = {
-          pageId: '7f9f27c65e84e71e1b7189b7132b4710',
-            p1: self.set_value_ejrwyoigs2g00
-        }
---
-        var param = {
-          pageId: '7f9f27c65e84e71e1b7189b7132b4710',
-            p1: self.set_value_ewit955urso00
-        }
---
-        var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '新闻发布厅'
         }
@@ -429,29 +397,10 @@ title: '综合新闻'
         }
 --
         var param = {
-          pageId: '5afa2289c8a14feb189920231dadc643',
-            params_id: self.selected_9uq1ozsv23400
-        }
---
-        var param = {
-          pageId: '9a3668c13f6e303932b5e0e100fc248b',
-            programa_id: '头条专区',
-cate_id: self.selected_exbd7xezqe800,
-title: self.selected_exbd7xezqe800
-        }
---
-        var param = {
           pageId: '9a3668c13f6e303932b5e0e100fc248b',
             programa_id: '环球视野',
 cate_id: '文明交流互鉴',
 title: '世界文明研究'
-        }
---
-        var param = {
-          pageId: '9a3668c13f6e303932b5e0e100fc248b',
-            programa_id: '环球视野',
-cate_id: self.selected_exbd7xezqe800,
-title: self.selected_exbd7xezqe800
         }
 --
         var param = {
@@ -509,13 +458,6 @@ title: '中国科技史'
 cate_id: '一线风采',
 type: '图文',
 title: '一线风采'
---
-        var param = {
-          pageId: '5957f69bffab66811b99940516ec8784',
-            programa_id: '学习科学',
-cate_id: self.selected_g0ictwo6lh400,
-title: self.selected_g0ictwo6lh400
-        }
 --
         var param = {
           pageId: 'b026785c5043851a5dfc0ae65a4749c5',
