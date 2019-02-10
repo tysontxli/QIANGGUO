@@ -18,8 +18,8 @@ class get_category_url():
         使得这些对象成为js数组中的元素。
         :return:
         """
-        with open ("./aboutCategory/catagoryData.txt","r") as f:
-            with open("./aboutCategory/FomatCatagoryData.txt","w") as n:
+        with open ("/root/QIANGGUO/QIANGGUO/scrapy/aboutCategory/catagoryData.txt","r") as f:
+            with open("/root/QIANGGUO/QIANGGUO/scrapy/aboutCategory/FomatCatagoryData.txt","w") as n:
                 temp = f.readlines()
                 count = 0
                 for line in temp:
@@ -34,7 +34,7 @@ class get_category_url():
         经过get_category_url.js对FomatCatagoryData的处理，拿到了一个包含所有栏目url的json字串，这个字串在json_url_data.txt中
         :return:
         """
-        with open ("./aboutCategory/json_url_data.txt") as u:
+        with open ("/root/QIANGGUO/QIANGGUO/scrapy/aboutCategory/json_url_data.txt") as u:
             urlList = json.loads(u.readline())
             return urlList
 
