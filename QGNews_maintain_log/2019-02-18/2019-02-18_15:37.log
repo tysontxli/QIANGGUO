@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 2, in <module>
+    from bs4 import BeautifulSoup
+ImportError: No module named bs4
