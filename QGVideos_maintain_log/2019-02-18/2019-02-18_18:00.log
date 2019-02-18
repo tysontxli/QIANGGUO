@@ -1,0 +1,14 @@
+['https://www.xuexi.cn/4426aa87b0b64ac671c96379a3a8bd26/datadb086044562a57b441c24f2af1c8e101.js', u'https://www.xuexi.cn/9e0809abd7b29ff09a9890486e0ace52/data29f26f722b3749f799692dcb4c3bc73c.js', u'https://www.xuexi.cn/5984cbfad3406999bae6844604122bf4/data3130ba968c09230dc802101c66761e93.js', u'https://www.xuexi.cn/261c9a142ef8e6375ed554815a26d585/dataf2d8ff735982530b7a8c9bb90fa99f68.js', u'https://www.xuexi.cn/e20602b4767a8f75cdd6245e46513931/data91b2545db4228cb3b1c2c8751902b55f.js']
+这个栏目长度为8656,有0个是新视频，有8656个是旧视频
+这个栏目长度为2510,有0个是新视频，有2510个是旧视频
+这个栏目长度为540,有0个是新视频，有540个是旧视频
+Traceback (most recent call last):
+  File "/root/QIANGGUO/QIANGGUO/scrapy/videos_scrapy.py", line 134, in <module>
+    scrapy.__maintain__()
+  File "/root/QIANGGUO/QIANGGUO/scrapy/videos_scrapy.py", line 113, in __maintain__
+    cursor.execute(insertsqlbase)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+_mysql_exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\xe4\xb8\x80\xe5\xb8\xa6\xe4\xb8\x80\xe8\xb7\xaf'\xe6\x9c\xba\xe9\x81\x87\xe2\x80\x9d','https://www.xuexi.cn/49a158889f68b6279396fa3eaba078a4/e' at line 1")
