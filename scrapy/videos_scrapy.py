@@ -103,30 +103,35 @@ class videos_scrapy(object):
             cursor = db.cursor()
             newvideo = 0
             oldvideo = 0
+            unabled = 0
             for video in videoList:
                 selectsql = "select * from QGVideos where video_url = '%s'" % (video['static_page_url'])
                 cursor.execute(selectsql)
                 if cursor.rowcount == 0:
-                    # ============下方代码需要写函数复用==================
-                    insertsqlbase = "INSERT INTO QGVideos(video_type,video_title,video_url,column_id) VALUES('%s','%s','%s','%s')" % (
-                    video['type'], video['frst_name'], video['static_page_url'], video['cate_id'])
-                    cursor.execute(insertsqlbase)
-                    video_date = "null"
-                    video_img_url = "null"
-                    for key, value in video.items():
-                        if key == "original_time":
-                            video_date = value
-                        if key == "imgUrl":
-                            video_img_url = value
-                    updatesqlbase = "UPDATE QGVideos SET video_date='%s',video_img_url='%s' WHERE video_url = '%s'" % (
-                    video_date, video_img_url, video['static_page_url'])
-                    cursor.execute(updatesqlbase)
-                    db.commit()
-                    #============上方代码需要写函数复用==================
-                    print "发现新视频(或图片故事)：《%s》,已为您添加到数据库"%video['frst_name']
+                    try:
+                        # ============下方代码需要写函数复用==================
+                        insertsqlbase = "INSERT INTO QGVideos(video_type,video_title,video_url,column_id) VALUES('%s','%s','%s','%s')" % (
+                        video['type'], video['frst_name'], video['static_page_url'], video['cate_id'])
+                        cursor.execute(insertsqlbase)
+                        video_date = "null"
+                        video_img_url = "null"
+                        for key, value in video.items():
+                            if key == "original_time":
+                                video_date = value
+                            if key == "imgUrl":
+                                video_img_url = value
+                        updatesqlbase = "UPDATE QGVideos SET video_date='%s',video_img_url='%s' WHERE video_url = '%s'" % (
+                        video_date, video_img_url, video['static_page_url'])
+                        cursor.execute(updatesqlbase)
+                        db.commit()
+                        #============上方代码需要写函数复用==================
+                        print "发现新视频(或图片故事)：《%s》,已为您添加到数据库"%video['frst_name']
+                        newvideo +=1
+                    except:
+                        unabled +=1
                 elif cursor.rowcount > 0:
                     oldvideo +=1
-            print "这个栏目长度为%s,有%s个是新视频，有%s个是旧视频"%(len(videoList),newvideo,oldvideo)
+            print "这个栏目长度为%s,有%s个是新视频，有%s个是旧视频,坏连接%s个"%(len(videoList),newvideo,oldvideo,unabled)
 
 if __name__=="__main__":
     scrapy = videos_scrapy()
