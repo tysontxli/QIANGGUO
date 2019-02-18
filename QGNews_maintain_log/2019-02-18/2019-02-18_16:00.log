@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/root/QIANGGUO/QIANGGUO/scrapy/news_scrapy.py", line 5, in <module>
+    import MySQLdb
+ImportError: No module named MySQLdb
