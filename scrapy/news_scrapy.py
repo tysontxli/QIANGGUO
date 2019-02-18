@@ -1,9 +1,7 @@
 #-*-coding:utf-8-*-
 from bs4 import BeautifulSoup
 import requests
-import re
 import json
-import pandas
 import MySQLdb
 import sys
 reload(sys)
